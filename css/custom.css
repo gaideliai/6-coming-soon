@@ -1,0 +1,80 @@
+.container{
+    display: inline-block;
+    width: 100%;
+    padding: 80px 0; 
+}
+.container.hero{
+    background-color: #03A9F5;
+    background-image: url(../img/pic.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    /* padding-top: 80px; */
+    padding-bottom: 20px;
+
+}
+.container.content{
+    background-color: white;
+    /* padding-top: 80px; */
+    /* padding-bottom: 80px; */
+}
+.container.footer{
+    background-color: #03A9F5;
+    padding-top: 10px;
+    /* padding-bottom: 80px; */
+}
+.container > .hero-row{
+    display: inline-block;
+    width: 600px;
+    margin-left: calc(50% - 300px);
+    text-align: center;
+}
+.container > .row{
+    display: inline-block;
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+    
+}
+    .container > .row > .left{
+        display: inline-block;
+        width: 50%;
+        float: left;
+        background-color: blueviolet;
+
+    }
+    .container > .row > .right{
+        display: inline-block;
+        width: 40%;
+        float: right;
+        background-color: rosybrown;
+
+    }
+
+@media (max-width: 1100px) {
+    .container > .row{
+        width: 800px;
+        margin-left: calc(50% - 400px);
+    }
+}
+@media (max-width: 900px) {
+    .container > .row{
+        width: 600px;
+        margin-left: calc(50% - 300px);
+    }
+}
+@media (max-width: 700px) {
+    .container > .row,
+    .container > .hero-row{
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0;
+    }
+    .container > .row > .left{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .container > .row > .right{
+        width: 100%;
+    }
+}
